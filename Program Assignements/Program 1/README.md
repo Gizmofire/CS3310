@@ -1,15 +1,15 @@
-# Assigment 1 
+# Assignment 1 
 
 ## Challeneges
 - must pass file in cli 
-- read contnets of txt file 
+- read contents of txt file 
 - be able to catch lone edges
-- be able to catch reapeated edge pairs 
+- be able to catch repeated edge pairs 
 
 ## Description
 The program reads the verticies and edges of the input file then returns the adjacency list of the graph
 
-## For Grader 😀
+## For Grader 😀 (cmdl)
 1. Clone the repository to your local machine using:
    ```
    git clone https://github.com/Gizmofire/CS3310.git
@@ -34,11 +34,15 @@ Thanks for grading!
 ```bash 
 java solution.java ./Givens/SampleInput.txt 
 ```
-## Thought Proce
+## Thought Process/ Brainstorming
 - read file
 - parse and solve per line in file 
   - breakdown the string in to recognizeable parts
     - it has spaces to divy up the parts
   - store the parts in a data structure 
     - used arrayList for edges for ease of manipulation 
+- apply dfs algo
+  - https://www.geeksforgeeks.org/dsa/depth-first-search-or-dfs-for-a-graph/
+    - This Slide was very helpful to explain the adjency list comparisons
+  - https://algs4.cs.princeton.edu/41graph/DepthFirstSearch.java.html
 - print results
