@@ -22,6 +22,8 @@ cd ./Program\ Assignements/Program\ 2/
 java main.java  
 ```
 Thanks for grading!
+
+
 ## Challenge
 - Given a list of words, group the words that are anagrams of each other together.
 - Considerations:

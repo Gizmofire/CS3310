@@ -1,8 +1,30 @@
+/**************************************************************/
+/* Gordon Lau  */
+/* Login ID: 016229083 */
+/* CS 3310, Fall 2025 */
+/* Programming Assignment 2 */
+/* Solution class: Solution for anagrams */
+/**************************************************************/
+
+
+
 import java.io.*;
 import java.util.*;
 
+
+
+
+
 public class main {
+
+
+    /**************************************************************/
+    /* Method: Main */
+    /* Purpose: Start of program for the anagram word array sorting algo*/
+    /* Returns: Text in CLI */
+    /**************************************************************/
     public static void main(String[] args) {
+
         // Creates a dictionary to store word groups (anagrams)
         Map<String, List<String>> wordGroups = new HashMap<>();
 
@@ -29,7 +51,7 @@ public class main {
             // Writes anagrams to output file
             BufferedWriter writer = new BufferedWriter(new FileWriter("anagrams.txt"));
             
-            // Only write groups that have more than one word (actual anagrams)
+            // Only write to groups that have more than one word (actual anagrams)
             for (List<String> group : wordGroups.values()) {
                 if (group.size() > 1) {
                     writer.write(String.join(" ", group));
