@@ -1,11 +1,10 @@
-/**
- * CS 3310 - Program 3: Canoe Trip
- * Fall 2025
- *
- * This program calculates the minimum cost sequence of canoe rentals to travel
- * down a river with n trading posts. It uses a dynamic programming approach
- * to compute the optimal costs using a single matrix for memory efficiency.
- */
+/**************************************************************/
+/* Gordon Lau  */
+/* Login ID: 016229083 */
+/* CS 3310, Fall 2025 */
+/* Programming Assignment 3 */
+/* Solution class: Solution for canoe effecient */
+/**************************************************************/
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -13,14 +12,8 @@ import java.util.Scanner;
 
 public class Main {
 
-    // Single matrix to store costs.
-    // Initially, it holds the direct rental costs (input).
-    // After processing, it holds the optimal minimum costs.
-    private static int[][] costMatrix;
 
-    // Matrix to store the path reconstruction information.
-    // nextStop[i][j] stores the "split point" k that provided the minimum cost
-    // for the trip from i to j. If the direct trip is best, nextStop[i][j] = j.
+    private static int[][] costMatrix;
     private static int[][] splitPoint;
 
     private static int n; // Number of trading posts
@@ -133,7 +126,8 @@ public class Main {
             System.out.println();
         }
         System.out.println();
-        
+
+        // maybe remorve this later 
         System.out.println("\nSplit Matrix:");
         System.out.print("      ");
         for (int j = 0; j < n; j++) {

@@ -14,12 +14,14 @@
 3.  Run the test case using 
     ```bash 
     java main.java  
+    inputA 
     ```
 Or just run the big block below in your terminal
 ```bash
 git clone https://github.com/Gizmofire/CS3310.git
 cd ./Program\ Assignements/Program\ 3/
 java main.java  
+
 ```
 Thanks for grading!
 
